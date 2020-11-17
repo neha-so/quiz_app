@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+{% block content %}
+  {% for obj in object_list %}
+  	{{forloop.counter.0}}
+  	{{obj}}
+  {% endfor %}
+{% endblock %}
